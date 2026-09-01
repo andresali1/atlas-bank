@@ -1,28 +1,267 @@
-# Angular specific
-/dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
+# ============================================================
+# .NET / Visual Studio
+# ============================================================
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+_ReSharper*/
+*.[Rr]eSharper
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ============================================================
+# .NET generated / temporary files
+# ============================================================
+
+*.tmp
+*.temp
+*.log
+*.cache
+*.pidb
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+
+# MSBuild
+*.binlog
+
+# Generated files
+Generated Files/
+Generated_Code/
+
+# ============================================================
+# NuGet
+# ============================================================
+
+*.nupkg
+*.snupkg
+
+# Old packages folder
+**/[Pp]ackages/
+!**/[Pp]ackages/build/
+
+# NuGet generated files
+*.nuget.props
+*.nuget.targets
+
+# ============================================================
+# .NET tooling
+# ============================================================
+
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+
+# Coverage
+coverage/
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+*.coveragexml
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# ============================================================
+# ASP.NET / Web
+# ============================================================
+
+# Local publish output
+publish/
+PublishScripts/
+
+# ASP.NET scaffolding
+ScaffoldingReadMe.txt
+
+# ============================================================
+# Azure / deployment
+# ============================================================
+
+# Publish profiles may contain credentials
+*.pubxml
+*.publishproj
+*.azurePubxml
+*.publishsettings
+
+# Azure generated files
+csx/
+ecf/
+rcf/
+
+# ============================================================
+# Angular / Node.js
+# ============================================================
+
+# Dependencies
+node_modules/
+
+# Angular build output
+dist/
+
+# Angular temporary files
+tmp/
+out-tsc/
+
+# Angular cache
 .angular/
+.cache/
 
-# Node modules and dependency files
-/node_modules/
-/package-lock.json
-/yarn.lock
+# Sass
+.sass-cache/
 
-# Environment files
-/.env
-
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Logs
+# npm
 npm-debug.log*
+npm-error.log*
+
+# Yarn
 yarn-debug.log*
 yarn-error.log*
+
+# pnpm
+pnpm-debug.log*
+
+# Package manager logs
+lerna-debug.log*
+
+# ============================================================
+# Angular / frontend coverage
+# ============================================================
+
+coverage/
+
+# ============================================================
+# Environment variables / secrets
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# Local configuration
+*.local
+
+# ============================================================
+# Certificates / keys / secrets
+# ============================================================
+
+# Certificates
+*.pfx
+*.p12
+
+# Private keys
+*.key
+*.pem
+
+# Strong name keys
+# Uncomment only if you do NOT want to version them
+# *.snk
+
+# ============================================================
+# Database local files
+# ============================================================
+
+*.mdf
+*.ldf
+*.ndf
+
+# ============================================================
+# OS generated files
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS metadata
+._*
+
+# Linux
+*~
+
+# ============================================================
+# Archives / temporary files
+# ============================================================
+
+*.bak
+*.swp
+*.swo
+*.orig
+*.old
+
+# ============================================================
+# Local development
+# ============================================================
+
+# Local history
+.localhistory/
+
+# Fody
+FodyWeavers.xsd
+
+# Ionide
+.ionide/
+
+# ============================================================
+# Optional: local Docker files
+# ============================================================
+
+# DO NOT ignore Dockerfile or docker-compose.yml
+# They should normally be committed.
+
+# Ignore local Docker overrides if you use them
+docker-compose.override.yml
+
+# ============================================================
+# Optional: local tooling
+# ============================================================
+
+# Tye
+.tye/
+
+# Python artifacts (useful if scripts/tools are added later)
+__pycache__/
+*.py[cod]
