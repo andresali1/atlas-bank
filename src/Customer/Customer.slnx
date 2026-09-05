@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Customer.Api/Customer.Api.csproj" Id="9c99b3c7-3bd3-4de0-aa63-f912b115ce49" />
+  <Project Path="Customer.Business/Customer.Business.csproj" Id="de05ac77-da0e-4a54-ad2e-e99a1860f6d5" />
+</Solution>
