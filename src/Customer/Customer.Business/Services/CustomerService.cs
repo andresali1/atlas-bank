@@ -28,7 +28,7 @@ namespace Customer.Business.Services
                 throw new ArgumentException("Email already exists");
             }
 
-            return customer;
+            return await customerRepository.Add(customer);
         }
     }
 }

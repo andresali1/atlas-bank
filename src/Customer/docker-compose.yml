@@ -1,0 +1,10 @@
+services:
+  mysqldb:
+    ports:
+      - "3307:3306"
+
+  customer.api:
+    image: ${DOCKER_REGISTRY-}customerapi
+    build:
+      context: .
+      dockerfile: Customer.Api/Dockerfile

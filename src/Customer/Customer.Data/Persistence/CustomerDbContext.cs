@@ -6,6 +6,6 @@ namespace Customer.Data.Persistence
     {
         public CustomerDbContext(DbContextOptions<CustomerDbContext> options) : base(options) { }
 
-        public DbSet<Entities.Customer> Customers { get; set; }
+        public DbSet<Entities.Customer> Customers { get; set; } = default!;
     }
 }

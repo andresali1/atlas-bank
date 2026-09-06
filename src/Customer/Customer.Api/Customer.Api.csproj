@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>10d88471-a127-42c9-a078-e6b69ee17a75</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Customer.Business\Customer.Business.csproj" />
+    <ProjectReference Include="..\Customer.Data\Customer.Data.csproj" />
     <ProjectReference Include="..\Customer.Entities\Customer.Entities.csproj" />
   </ItemGroup>
 

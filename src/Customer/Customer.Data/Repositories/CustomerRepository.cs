@@ -15,5 +15,9 @@ namespace Customer.Data.Repositories
         {
             return await _context.Customers.AnyAsync(c => c.Email == email);
         }
+        public async Task<Entities.Customer> Add(Entities.Customer customer)
+        {
+            return new Entities.Customer();
+        }
     }
 }

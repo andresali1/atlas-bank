@@ -14,5 +14,11 @@ namespace Customer.Business.Tests.Repositories
             bool customerExists = existentCustomers.Any(x => x.Email == email);
             return Task.FromResult(customerExists);
         }
+        public Task<Entities.Customer> Add(Entities.Customer customer)
+        {
+            existentCustomers.Add(customer);
+
+            return Task.FromResult(customer);
+        }
     }
 }

@@ -7,4 +7,7 @@
   <Project Path="Customer.Contracts/Customer.Contracts.csproj" Id="bafcf7d7-2c1b-485f-abb2-f707e5388a17" />
   <Project Path="Customer.Data/Customer.Data.csproj" Id="214a4ff6-c8a8-4849-a460-fc84a21948d0" />
   <Project Path="Customer.Entities/Customer.Entities.csproj" Id="3f381929-3772-4a95-9cc8-63fd43b22d8b" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
 </Solution>

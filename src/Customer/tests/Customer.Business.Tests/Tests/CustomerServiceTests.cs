@@ -91,6 +91,7 @@ namespace Customer.Business.Tests.Tests
             Entities.Customer createdCustomer = await customerService.Create(customer);
 
             // Assert
+            Assert.NotNull(createdCustomer);
             Assert.Equal(customer.FirstName, createdCustomer.FirstName);
             Assert.Equal(customer.LastName, createdCustomer.LastName);
             Assert.Equal(customer.Email, createdCustomer.Email);
