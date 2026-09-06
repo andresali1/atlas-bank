@@ -5,12 +5,9 @@ atlas-bank/
 │       ├── Customer.Api/
 │       ├── Customer.Business/
 │       ├── Customer.Data/
-│       └── Customer.Entities/
-│
-├── tests/
-│   └── Customer/
-│       ├── Customer.Business.Tests/
-│       └── Customer.Api.Tests/
+│       ├── Customer.Entities/
+│       └── tests/
+│           └── Customer.Business.Tests/
 │
 ├── docs/
 │   └── adr/
