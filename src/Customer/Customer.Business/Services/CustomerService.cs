@@ -1,4 +1,6 @@
-﻿namespace Customer.Business
+﻿using Customer.Contracts.Interfaces;
+
+namespace Customer.Business.Services
 {
     public class CustomerService
     {
@@ -7,7 +9,7 @@
         {
             this.customerRepository = customerRepository;
         }
-        public Entities.Customer Create(Entities.Customer customer)
+        public async Task<Entities.Customer> Create(Entities.Customer customer)
         {
             if (string.IsNullOrWhiteSpace(customer.FirstName))
             {
@@ -21,7 +23,7 @@
             {
                 throw new ArgumentException("Email is required");
             }
-            if (customerRepository.ExistsByEmail(customer.Email))
+            if (await customerRepository.ExistsByEmail(customer.Email))
             {
                 throw new ArgumentException("Email already exists");
             }

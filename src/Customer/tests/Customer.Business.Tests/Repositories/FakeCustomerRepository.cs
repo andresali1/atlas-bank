@@ -1,4 +1,6 @@
-﻿namespace Customer.Business.Tests
+﻿using Customer.Contracts.Interfaces;
+
+namespace Customer.Business.Tests.Repositories
 {
     public class FakeCustomerRepository : ICustomerRepository
     {
@@ -7,9 +9,10 @@
             new Entities.Customer() { FirstName= "Customer2", LastName = "Customer2", Email="customer2@mail.com" },
             new Entities.Customer() { FirstName= "Customer3", LastName = "Customer3", Email="customer3@mail.com" },
         };
-        public bool ExistsByEmail(string email)
+        public Task<bool> ExistsByEmail(string email)
         {
-            return existentCustomers.Any(x => x.Email == email);
+            bool customerExists = existentCustomers.Any(x => x.Email == email);
+            return Task.FromResult(customerExists);
         }
     }
 }
