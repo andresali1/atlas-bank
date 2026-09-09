@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/Identity.Application.Tests/Identity.Application.Tests.csproj" Id="0c97871d-8775-4196-aa23-fba24826a479" />
+    <Project Path="tests/Identity.Integration.Tests/Identity.Integration.Tests.csproj" Id="dc72d161-1089-41f7-be66-ec9feaf90bf1" />
+  </Folder>
+  <Project Path="Identity.Api/Identity.Api.csproj" Id="38f58ee9-8f54-4580-a926-373651506481" />
+  <Project Path="Identity.Application/Identity.Application.csproj" Id="f455dd2a-f3fe-4d7c-80e7-437624f1d732" />
+  <Project Path="Identity.Domain/Identity.Domain.csproj" Id="fd7090bb-1fda-4ee1-96ef-2203bb22a69d" />
+  <Project Path="Identity.Infrastructure/Identity.Infrastructure.csproj" Id="c9d1f053-7d8c-4b6f-9ba2-422e64b02f12" />
+</Solution>
