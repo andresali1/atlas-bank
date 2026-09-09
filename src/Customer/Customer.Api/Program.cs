@@ -1,3 +1,4 @@
+using Customer.Api.Middleware;
 using Customer.Business.Services;
 using Customer.Contracts.Interfaces;
 using Customer.Data.Persistence;
@@ -24,6 +25,8 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.MapControllers();
 
 app.Run();

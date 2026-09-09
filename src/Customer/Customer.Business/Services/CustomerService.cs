@@ -9,6 +9,10 @@ namespace Customer.Business.Services
         {
             this.customerRepository = customerRepository;
         }
+        public async Task<Entities.Customer> GetById(int id)
+        {
+            return await customerRepository.GetById(id);
+        }
         public async Task<Entities.Customer> Create(Entities.Customer customer)
         {
             if (string.IsNullOrWhiteSpace(customer.FirstName))

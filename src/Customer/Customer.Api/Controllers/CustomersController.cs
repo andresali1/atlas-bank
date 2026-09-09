@@ -14,7 +14,13 @@ namespace Customer.Api.Controllers
         {
             this.customerService = customerService;
         }
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var customer = await customerService.GetById(id);
 
+            return Ok(customer);
+        }
         [HttpPost]
         public async Task<IActionResult> Create(CreateCustomerRequest request)
         {
