@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.24.2-preview.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\tests\Identity.Application.Tests\Identity.Application.Tests.csproj" />
+  </ItemGroup>
+
 </Project>
