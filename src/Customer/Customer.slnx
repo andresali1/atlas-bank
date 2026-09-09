@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/tests/">
     <Project Path="tests/Customer.Business.Tests/Customer.Business.Tests.csproj" Id="0324cf25-00e1-4d0a-affb-6072a042d559" />
+    <Project Path="tests/Customer.Data.Tests/Customer.Data.Tests.csproj" Id="4c76d5bf-5455-4264-ae39-57c469e5317f" />
   </Folder>
   <Project Path="Customer.Api/Customer.Api.csproj" Id="9c99b3c7-3bd3-4de0-aa63-f912b115ce49" />
   <Project Path="Customer.Business/Customer.Business.csproj" Id="b6ad54dc-abc8-4317-b2b9-2064dd804da7" />

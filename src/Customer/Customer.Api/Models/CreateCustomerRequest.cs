@@ -1,8 +1,7 @@
-﻿namespace Customer.Entities
+﻿namespace Customer.Api.Models
 {
-    public class Customer
+    public class CreateCustomerRequest
     {
-        public int Id { get; set; }
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
         public string Email { get; set; } = default!;

@@ -17,7 +17,10 @@ namespace Customer.Data.Repositories
         }
         public async Task<Entities.Customer> Add(Entities.Customer customer)
         {
-            return new Entities.Customer();
+            await _context.Customers.AddAsync(customer);
+            await _context.SaveChangesAsync();
+
+            return customer;
         }
     }
 }
