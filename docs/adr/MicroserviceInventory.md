@@ -33,3 +33,13 @@
                          ▼              ▼
                        Audit         Reporting
                       MongoDB          Oracle
+					  
+Testing:
+Servicio	TDD inicial	Motivo
+Customer	🟢 Sí	Ya lo usamos para aprender N-Layer
+Identity	🟢 Sí	Buen candidato por reglas de negocio y seguridad
+Account	🟢 Sí	DDD es especialmente bueno para descubrir invariantes
+Transfer	🟢 Sí	Hay bastante lógica y CQRS
+Notification	🟡 Probablemente parcial	Mucha infraestructura/integración
+Audit	🟡 Parcial	El comportamiento interesante estará en eventos/integración
+Reporting	🟡/🔴 Según caso	Mucho del trabajo será queries/read model/infraestructura
