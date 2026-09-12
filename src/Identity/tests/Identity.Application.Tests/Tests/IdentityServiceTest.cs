@@ -1,4 +1,5 @@
-﻿using Identity.Application.Models;
+﻿using Identity.Application.Exceptions;
+using Identity.Application.Models;
 using Identity.Application.Tests.Repositories;
 using Identity.Domain;
 
@@ -54,7 +55,7 @@ namespace Identity.Application.Tests.Tests
             };
 
             // Assert
-            ArgumentException exception = await Assert.ThrowsAsync<ArgumentException>(() => useCase.Execute(user));
+            EmailAlreadyExistsException exception = await Assert.ThrowsAsync<EmailAlreadyExistsException>(() => useCase.Execute(user));
             Assert.Equal("Email already exists", exception.Message);
         }
         [Fact]
