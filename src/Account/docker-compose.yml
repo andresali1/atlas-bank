@@ -1,0 +1,12 @@
+services:
+  postgres.account:
+    image: postgres:17
+
+  account.api:
+    image: ${DOCKER_REGISTRY-}accountapi
+    build:
+      context: .
+      dockerfile: Account.Api/Dockerfile
+
+volumes:
+  postgres_account_data:

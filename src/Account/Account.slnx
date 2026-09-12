@@ -5,4 +5,7 @@
   <Project Path="Account.Api/Account.Api.csproj" Id="5ee8554e-7b14-4508-91ea-82bd70dbdacd" />
   <Project Path="Account.Domain/Account.Domain.csproj" Id="4834d627-5f69-410f-a649-8e3685b215c4" />
   <Project Path="Account.Infrastructure/Account.Infrastructure.csproj" Id="3e5f01dc-faf9-4320-b587-c5e60ee7ba39" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
 </Solution>
