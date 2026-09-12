@@ -1,0 +1,12 @@
+services:
+  postgres.identity:
+    image: postgres:17
+
+  identity.api:
+    image: ${DOCKER_REGISTRY-}identityapi
+    build:
+      context: .
+      dockerfile: Identity.Api/Dockerfile
+
+volumes:
+  postgres_identity_data:
