@@ -34,6 +34,46 @@ namespace Account.Domain
 
             return new Account(customerId, balance, AccountType.Current, AccountStatus.Active);
         }
-        public 
+        public void Block()
+        {
+            this.AccountStatus = AccountStatus.Blocked;
+        }
+        public void Unblock()
+        {
+            this.AccountStatus = AccountStatus.Active;
+        }
+        public void Deposit(decimal amount)
+        {
+            if (this.AccountStatus == AccountStatus.Blocked)
+            {
+                throw new InvalidOperationException("Blocked account can't deposit");
+            }
+
+            if (amount <= 0)
+            {
+                throw new ArgumentException("Amount to deposit must be greater than 0");
+            }
+
+            Balance += amount;
+        }
+        public void Withdraw(decimal amount)
+        {
+            if (this.AccountStatus == AccountStatus.Blocked)
+            {
+                throw new InvalidOperationException("Blocked account can't withdraw");
+            }
+
+            if (amount <= 0)
+            {
+                throw new ArgumentException("Amount to withdraw must be greater than 0");
+            }
+
+            if (amount > this.Balance)
+            {
+                throw new InvalidOperationException("Insufficient funds");
+            }
+
+            this.Balance -= amount;
+        }
     }
 }
