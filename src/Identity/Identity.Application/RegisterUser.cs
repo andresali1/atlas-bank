@@ -1,4 +1,5 @@
-﻿using Identity.Application.Interfaces;
+﻿using Identity.Application.Exceptions;
+using Identity.Application.Interfaces;
 using Identity.Application.Models;
 using Identity.Domain;
 
@@ -25,7 +26,7 @@ namespace Identity.Application
             }
             if (await userRepository.ExistsByEmail(user.Email))
             {
-                throw new ArgumentException("Email already exists");
+                throw new EmailAlreadyExistsException("Email already exists");
             }
 
             return await userRepository.Add(
