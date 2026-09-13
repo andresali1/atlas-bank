@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/Transfer.Application.Tests/Transfer.Application.Tests.csproj" Id="e21f1253-2be1-4dd1-8349-a3fe6e2a8155" />
+    <Project Path="tests/Transfer.Infrastructure.Tests/Transfer.Infrastructure.Tests.csproj" Id="aa853dc9-62a2-4f46-a5ee-6f54b8e6b1e5" />
+  </Folder>
+  <Project Path="Transfer.Api/Transfer.Api.csproj" Id="ee6ad8ec-382b-4fdd-a1f1-785622a55c26" />
+  <Project Path="Transfer.Application/Transfer.Application.csproj" Id="a58d684b-73d4-4296-ace8-87f50e65a745" />
+  <Project Path="Transfer.Domain/Transfer.Domain.csproj" Id="3f475a61-e597-41bd-b3d0-faba033b7d92" />
+  <Project Path="Transfer.Infrastructure/Transfer.Infrastructure.csproj" Id="a9cc26a5-3d9f-45b9-a32a-ed3cf14ffc43" />
+</Solution>
