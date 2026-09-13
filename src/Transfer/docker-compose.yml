@@ -1,0 +1,12 @@
+services:
+  sqlserver.transfer:
+    image: mcr.microsoft.com/mssql/server
+
+  transfer.api:
+    image: ${DOCKER_REGISTRY-}transferapi
+    build:
+      context: .
+      dockerfile: Transfer.Api/Dockerfile
+
+volumes:
+  sqlserver_transfer_data:

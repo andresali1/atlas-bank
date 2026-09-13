@@ -1,12 +1,23 @@
 services:
+  sqlserver.transfer:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: atlas-transfer-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "TransferPassword123!"
+    ports:
+      - "1434:1433"
+    volumes:
+      - sqlserver_transfer_data:/var/opt/mssql
+
   transfer.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
     ports:
-      - "8080"
-      - "8081"
+      - "6003:8080"
+      - "6063:8081"
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
