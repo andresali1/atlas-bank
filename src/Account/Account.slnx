@@ -1,8 +1,11 @@
 <Solution>
   <Folder Name="/tests/">
+    <Project Path="tests/Account.Application.Tests/Account.Application.Tests.csproj" Id="b67d09f6-bcde-4d69-b9a0-78ffdce05e75" />
     <Project Path="tests/Account.Domain.Tests/Account.Domain.Tests.csproj" Id="c46e8c6a-c777-4d07-99c0-72cc868b364d" />
+    <Project Path="tests/Account.Infrastructure.Tests/Account.Infrastructure.Tests.csproj" Id="26d30cd9-9d2b-44c3-a572-1ebd03357ae8" />
   </Folder>
   <Project Path="Account.Api/Account.Api.csproj" Id="5ee8554e-7b14-4508-91ea-82bd70dbdacd" />
+  <Project Path="Account.Application/Account.Application.csproj" Id="0c05486b-7ad4-48c6-a5b6-e6aa7fa3385b" />
   <Project Path="Account.Domain/Account.Domain.csproj" Id="4834d627-5f69-410f-a649-8e3685b215c4" />
   <Project Path="Account.Infrastructure/Account.Infrastructure.csproj" Id="3e5f01dc-faf9-4320-b587-c5e60ee7ba39" />
   <Project Path="docker-compose.dcproj">
