@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/tests/">
     <Project Path="tests/Transfer.Application.Tests/Transfer.Application.Tests.csproj" Id="e21f1253-2be1-4dd1-8349-a3fe6e2a8155" />
+    <Project Path="tests/Transfer.Domain.Tests/Transfer.Domain.Tests.csproj" Id="7446ce04-b42c-4973-aa12-a592b02dbe60" />
     <Project Path="tests/Transfer.Infrastructure.Tests/Transfer.Infrastructure.Tests.csproj" Id="aa853dc9-62a2-4f46-a5ee-6f54b8e6b1e5" />
   </Folder>
   <Project Path="docker-compose.dcproj">
