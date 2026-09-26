@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/Notification.Application.Tests/Notification.Application.Tests.csproj" Id="6fa71070-8a27-471c-9647-bd6eba89b055" />
+    <Project Path="tests/Notification.Infrastructure.Tests/Notification.Infrastructure.Tests.csproj" Id="7dc1e5dc-1fec-4258-acfb-9b3673031658" />
+  </Folder>
+  <Project Path="Notification.Api/Notification.Api.csproj" Id="b11fd7d0-667a-40b5-8373-34e56a0a005f" />
+  <Project Path="Notification.Application/Notification.Application.csproj" Id="9cdf4e6c-3b1d-4d31-a30d-4ec00a110d12" />
+  <Project Path="Notification.Infrastructure/Notification.Infrastructure.csproj" Id="fdc97111-7ea1-4f82-8df0-7f9da7f17004" />
+</Solution>
